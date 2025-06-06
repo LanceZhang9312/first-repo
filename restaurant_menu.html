@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+    <head>
+      <title>Byte Bistro</title>
+      <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f5ff;
+            color: #333;
+        }
+        
+        header {
+            background-color: #2a3990;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        #header-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid #5ce1e6;
+        }
+        
+        nav {
+            background-color: #5ce1e6;
+            padding: 10px;
+            text-align: center;
+        }
+        
+        nav a {
+            color: #2a3990;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        
+        main {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        
+        section {
+            margin-bottom: 40px;
+        }
+        
+        h2 {
+            color: #2a3990;
+            border-bottom: 2px solid #5ce1e6;
+            padding-bottom: 10px;
+        }
+        
+        .menu-items {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        
+        article {
+            width: 30%;
+            margin-bottom: 20px;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        
+        article:hover {
+            transform: translateY(-5px);
+        }
+        
+        article img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+        
+        h3 {
+            color: #2a3990;
+            margin: 10px 0;
+        }
+        
+        .price {
+            font-style: italic;
+            color: #2a3990;
+            font-weight: bold;
+        }
+        
+        form {
+            background-color: #f0f5ff;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        
+        .form-group {
+            margin-bottom: 15px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #2a3990;
+        }
+        
+        input[type="number"] {
+            width: 60px;
+            padding: 5px;
+            border: 1px solid #5ce1e6;
+            border-radius: 4px;
+        }
+        
+        .options-group {
+            margin: 15px 0;
+        }
+        
+        .option-item {
+            margin: 8px 0;
+        }
+        
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #5ce1e6;
+            border-radius: 4px;
+            resize: vertical;
+        }
+        
+        input[type="submit"] {
+            background-color: #2a3990;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            font-size: 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        
+        input[type="submit"]:hover {
+            background-color: #1a2770;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #2a3990;
+            color: white;
+        }
+    </style>
+    </head>
+    <body>
+        <header>
+            <img 
+            id="header-img" 
+            width="150"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Prospect_Park_New_York_October_2015_003.jpg/1024px-Prospect_Park_New_York_October_2015_003.jpg" 
+            alt="Byte Bistro Logo">
+            <h1>Byte Bistro</h1>
+            <nav>
+                <a href="#menu">Menu</a>
+                <a href="#order-form">Order Form</a>
+            </nav>
+        </header>
+
+        <main>
+        <section id="menu">
+            <h2>Menu</h2>
+            <div class="menu-items">
+                <article>
+                    <img 
+                        width="150"
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Prospect_Park_New_York_October_2015_003.jpg/1024px-Prospect_Park_New_York_October_2015_003.jpg" alt="Quantum Quesadilla">
+                    <h3>Quantum Quesadilla</h3>
+                    <p>A superposition of flavors with grilled chicken, three types of cheese, and our secret quantum sauce. <span class="price">$14.99</span></p>
+                </article>
+                
+                <article>
+                    <img 
+                        width="150"
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Prospect_Park_New_York_October_2015_003.jpg/1024px-Prospect_Park_New_York_October_2015_003.jpg" alt="Binary Burger">
+                    <h3>Binary Burger</h3>
+                    <p>Choose between 0 (vegetarian) or 1 (beef) patty with digital greens and algorithmic sauce. <span class="price">$16.99</span></p>
+                </article>
+                
+                <article>
+                    <img 
+                        width="150"
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Prospect_Park_New_York_October_2015_003.jpg/1024px-Prospect_Park_New_York_October_2015_003.jpg" alt="Python Pizza">
+                    <h3>Python Pizza</h3>
+                    <p>Our code-inspired pizza with nested toppings of pepperoni, mushrooms, and bell peppers. <span class="price">$18.99</span></p>
+                </article>
+            </div>
+        </section>
+        
+        <section id="order-form">
+            <h2>Place Your Order</h2>
+            <form>
+                <div class="form-group">
+                    <label for="quesadilla-quantity">Quantum Quesadilla Quantity:</label>
+                    <input type="number" id="quesadilla-quantity" name="quesadilla-quantity" min="0" value="0">
+                </div>
+                
+                <div class="form-group">
+                    <label for="burger-quantity">Binary Burger Quantity:</label>
+                    <input type="number" id="burger-quantity" name="burger-quantity" min="0" value="0">
+                </div>
+                
+                <div class="form-group">
+                    <label for="pizza-quantity">Python Pizza Quantity:</label>
+                    <input type="number" id="pizza-quantity" name="pizza-quantity" min="0" value="0">
+                </div>
+                
+                <div class="options-group">
+                    <label>Burger Type:</label>
+                    <div class="option-item">
+                        <input type="radio" id="binary-0" name="burger-type" value="vegetarian">
+                        <label for="binary-0">0 - Vegetarian</label>
+                    </div>
+                    <div class="option-item">
+                        <input type="radio" id="binary-1" name="burger-type" value="beef">
+                        <label for="binary-1">1 - Beef</label>
+                    </div>
+                </div>
+                
+                <div class="options-group">
+                    <label>Side Options:</label>
+                    <div class="option-item">
+                        <input type="checkbox" id="side-fries" name="sides" value="fries">
+                        <label for="side-fries">Firewall Fries</label>
+                    </div>
+                    <div class="option-item">
+                        <input type="checkbox" id="side-salad" name="sides" value="salad">
+                        <label for="side-salad">Data Salad</label>
+                    </div>
+                    <div class="option-item">
+                        <input type="checkbox" id="side-rings" name="sides" value="rings">
+                        <label for="side-rings">Onion Loops</label>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="special-requests">Special Requests for Pizza Toppings:</label><br>
+                    <textarea id="special-requests" name="special-requests" rows="4" placeholder="Any special requests for your Python Pizza?"></textarea>
+                </div>
+                
+                <input type="submit" value="Go To Checkout">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Made with love by LanceZZZ</p>
+    </footer>
+
+    </body>
+</html>
